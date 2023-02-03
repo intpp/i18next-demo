@@ -4,7 +4,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import BaseLayout from "@/layouts/BaseLayout";
 
-export async function getStaticProps({ locale }) {
+export async function getServerSideProps({ locale }) {
     return {
         props: {
             ...(await serverSideTranslations(locale, [
@@ -15,7 +15,7 @@ export async function getStaticProps({ locale }) {
     }
 }
 
-export default function Home() {
+export default function ServerSide() {
     const { t } = useTranslation()
 
     return (
