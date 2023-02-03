@@ -5,7 +5,7 @@ import { useTranslation } from 'next-i18next';
 import BaseLayout from "@/layouts/BaseLayout";
 import {useRouter} from "next/router";
 
-export async function getServerSideProps({ locale }) {
+export async function getServerSideProps({ locale }: { locale: string }) {
     return {
         props: {
             ...(await serverSideTranslations(locale, [
