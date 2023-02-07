@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { useTranslation } from 'intpp-next-i18next';
+import { useTranslation } from 'next-i18next';
 
 export type NavigationItem = {label: string; url: string};
 
