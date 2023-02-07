@@ -1,7 +1,7 @@
 import React from "react";
 import Head from 'next/head'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'intpp-next-i18next/serverSideTranslations';
+import { useTranslation } from 'intpp-next-i18next';
 import BaseLayout from "@/layouts/BaseLayout";
 
 export async function getStaticProps({ locale }: { locale: string }) {

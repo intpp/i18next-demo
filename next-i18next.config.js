@@ -3,7 +3,7 @@
 const path = require('path');
 
 /**
- * @type {import('next-i18next').UserConfig}
+ * @type {import('intpp-next-i18next').UserConfig}
  */
 module.exports = {
   defaultNS: 'default',
